@@ -1,0 +1,14 @@
+.slider {
+    width: 1024px;
+    margin: 50px auto;
+}
+@media screen and (max-width: 767px) {
+    .slider {
+        width: 280PX;
+        margin: 50px auto;
+        padding: 0;
+    }
+    .slider li img {
+        width: 375px;
+    }
+}
