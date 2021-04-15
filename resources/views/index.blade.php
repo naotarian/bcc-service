@@ -11,11 +11,17 @@
 </head>
 <body>
     @include('template.header')
-    <ul class="slider">
-      <li><img src="/images/pc/top/deli.jpeg"></li>
-      <li><img src="/images/pc/top/hell.jpeg"></li>
-      <li><img src="/images/pc/top/deli.jpeg"></li>
-      <li><img src="/images/pc/top/hell.jpeg"></li>
+    <ul class="slider pconly">
+      <li><img src="/images/pc/top/01.jpg"></li>
+      <li><img src="/images/pc/top/01.jpg"></li>
+      <li><img src="/images/pc/top/01.jpg"></li>
+      <li><img src="/images/pc/top/01.jpg"></li>
+    </ul>
+    <ul class="slider sponly">
+      <li><img src="/images/sp/top/01_sp.png"></li>
+      <li><img src="/images/sp/top/01_sp.png"></li>
+      <li><img src="/images/sp/top/01_sp.png"></li>
+      <li><img src="/images/sp/top/01_sp.png"></li>
     </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.js"></script>

@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     margin: 0;
+    padding: 0;
     display: block;
     box-sizing: border-box;
 
@@ -90,6 +91,8 @@
 .slick-slide img
 {
     display: block;
+    width: 100%;
+    max-height: 600px;
 }
 .slick-slide.slick-loading img
 {
