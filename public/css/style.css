@@ -401,3 +401,8 @@ a {
   background: #6BBE92;
   height: 65px;
 }
+
+.btn {
+  background: red;
+  padding: 1rem;
+}

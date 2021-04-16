@@ -1,0 +1,13 @@
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    .item_box {
+        width: 300px;
+        padding: 2rem;
+        border-radius: 10px;
+        border: 1px solid #6BBE92;
+        p {
+            text-align: center;
+        }
+    }
+}

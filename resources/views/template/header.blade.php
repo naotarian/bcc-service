@@ -13,7 +13,9 @@
             <li>サンプルテキスト</li>
             <li>サンプルテキスト</li>
         </ul>
+        <a href="/mypage" class="btn">出品者の方</a>
     </div>
+    
     <nav>
       <ul id="main">
         <li>Home</li>
