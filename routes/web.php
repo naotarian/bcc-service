@@ -24,3 +24,8 @@ Route::get('/', [DynamicController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+Route::get('/item_register', [AdminController::class, 'item_register'])->middleware('auth');
+Route::post('/item_register', [AdminController::class, 'item_register_post'])->middleware('auth');
+Route::get('/base', function () {
+    return view('layouts.base');
+})->middleware('auth');

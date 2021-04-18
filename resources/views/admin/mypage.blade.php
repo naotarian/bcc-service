@@ -12,10 +12,13 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            <!--{{ __('Dashboard') }}-->
+            {{ __('Dashboard') }}
         </h2>
+        <a href="/item_register">商品登録</a>
+        <a href="/logout" method="post">logout</a>
     </x-slot>
     <div class="wrapper">
+            <h1><b>出品中の商品</b></h1>
         <div class="items">
             @foreach($items as $item)
                 <div class="item_box">
@@ -35,4 +38,12 @@
     <!--    </div>-->
     <!--</div>-->
 </x-app-layout>
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
+</x-app-layout>
+
 </html>

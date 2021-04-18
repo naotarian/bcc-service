@@ -406,3 +406,10 @@ a {
   background: red;
   padding: 1rem;
 }
+
+#item_register dt {
+  float: left;
+}
+#item_register dd {
+  margin-left: 250px;
+}
