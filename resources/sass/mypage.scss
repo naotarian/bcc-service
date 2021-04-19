@@ -1,7 +1,7 @@
 .items {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin: 2rem auto;
     .item_box {
         width: 300px;
         padding: 2rem;
@@ -11,4 +11,13 @@
             text-align: center;
         }
     }
+}
+.item_banner {
+    background:linear-gradient(
+        to bottom,
+        transparent 50%,
+        #6BBE92 50%
+    );
+    width: 160px;
+    text-align: center;
 }

@@ -18,15 +18,35 @@
         <a href="/logout" method="post">logout</a>
     </x-slot>
     <div class="wrapper">
-            <h1><b>出品中の商品</b></h1>
+            
+        <div class="item_banner"><b>出品中の商品</b></div>
         <div class="items">
             @foreach($items as $item)
+            @if($item->is_stop == 0)
                 <div class="item_box">
                     <p>{{$item->title}}</p>
                     <p>{{number_format($item->price)}}円(税込)</p>
+                    <div class="btn">
+                        <a href="/item_edit/{{$item->id}}">編集する</a>
+                    </div>
                 </div>
+            @endif
             @endforeach
         </div>
+        <div class="item_banner"><b>出品停止中の商品</b></div>
+        <div class="items">
+            @foreach($items as $item)
+                @if($item->is_stop == 1)
+                    <div class="item_box">
+                        <p>{{$item->title}}</p>
+                        <p>{{number_format($item->price)}}円(税込)</p>
+                        <div class="btn">
+                            <a href="/item_edit/{{$item->id}}">編集する</a>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+     </div>
     </div>
     
 

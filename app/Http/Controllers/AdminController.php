@@ -45,4 +45,21 @@ class AdminController extends Controller
         $new_item->save();
         return redirect('mypage');
     }
+    
+    public function item_edit($id)
+    {
+        $data = Item::find($id);
+        return view('admin.item_edit', compact('data'));
+    }
+    public function item_edit_post(Request $request)
+    {
+        $datas = $request->all();
+        $item = Item::find($datas['item_id']);
+        $item->title = $datas['title'];
+        $item->price = $datas['price'];
+        $item->is_coupon = $datas['is_coupon'];
+        $item->save();
+        
+        return redirect('mypage');
+    }
 }

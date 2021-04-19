@@ -29,3 +29,5 @@ Route::post('/item_register', [AdminController::class, 'item_register_post'])->m
 Route::get('/base', function () {
     return view('layouts.base');
 })->middleware('auth');
+Route::get('/item_edit/{id}', [AdminController::class, 'item_edit'])->middleware('auth');
+Route::post('/item_edit', [AdminController::class, 'item_edit_post'])->middleware('auth');
